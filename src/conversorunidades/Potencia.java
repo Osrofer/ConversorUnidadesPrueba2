@@ -11,4 +11,8 @@ package conversorunidades;
  */
 public class Potencia {
     
+    public static void KWaCV(){
+    
+    }
+    
 }
