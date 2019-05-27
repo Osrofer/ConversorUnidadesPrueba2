@@ -5,10 +5,25 @@
  */
 package conversorunidades;
 
+import java.util.Scanner;
+
 /**
  *
  * @author thete
  */
 public class Lonxitude {
+    
+        
+    public static void kmsAMillas(){
+        double km;
+        double millas;
+        
+        Scanner pepe = new Scanner(System.in);
+        km = pepe.nextDouble();
+        
+        
+            millas = km * 0.621371;
+            System.out.println(millas); 
+    }
     
 }
