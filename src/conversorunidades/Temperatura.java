@@ -11,4 +11,9 @@ package conversorunidades;
  */
 public class Temperatura {
     
+    public static void CelsiusaFahrenheit(){
+    
+    
+    }
+    
 }
