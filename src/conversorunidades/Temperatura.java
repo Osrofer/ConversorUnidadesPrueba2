@@ -16,4 +16,8 @@ public class Temperatura {
     
     }
     
+    public static void FahrenheitaCelsius(){
+        
+    }
+    
 }
