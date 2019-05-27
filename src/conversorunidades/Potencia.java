@@ -15,4 +15,8 @@ public class Potencia {
     
     }
     
+    public static void CVaKW(){
+        
+    }
+    
 }
