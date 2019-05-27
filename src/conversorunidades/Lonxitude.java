@@ -26,4 +26,8 @@ public class Lonxitude {
             System.out.println(millas); 
     }
     
+    public static void MillasaKm(){
+        
+    }
+    
 }
