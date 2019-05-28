@@ -30,13 +30,24 @@ public class Lonxitude {
         double km;
         double millas;
         
-        Scanner pepe = new Scanner(System.in);
         millas = pepe.nextDouble();
         
         
             km = millas * 1.609;
             System.out.println(millas);
     }
+    
+    public static void MillasaPulgadas(){
+        double millas;
+        double pulgadas;
+        
+        millas = pepe.nextDouble();
+        
+        pulgadas = millas * 63360;
+        System.out.println(pulgadas);        
+    }
+    
+    
     
     
 }
