@@ -47,6 +47,16 @@ public class Lonxitude {
         System.out.println(pulgadas);        
     }
     
+    public static void PulgadasaMillas(){
+        double millas;
+        double pulgadas;
+        
+        pulgadas = pepe.nextDouble();
+        
+        millas = pulgadas / 63360;
+        System.out.println(millas);        
+    }
+    
     
     
     
