@@ -51,4 +51,16 @@ public class Temperatura {
             System.out.println(K);        
     }
     
+    public static void KelvinCelsius(){
+        
+        double C;
+        double K;
+        
+        K = pepe.nextDouble();
+        
+        
+            C = K - 273.15;
+            System.out.println(C);        
+    }
+    
 }
