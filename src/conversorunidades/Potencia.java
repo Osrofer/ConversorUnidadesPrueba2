@@ -36,4 +36,16 @@ public class Potencia {
         System.out.println(KW);
     }
     
+    public static void KWaFtLb(){
+        double FtLb;
+        double KW;
+        
+        FtLb = pepe.nextDouble();
+        
+        KW = FtLb * 737.562149;
+        System.out.println(KW);
+    }
+    
+    
+    
 }
