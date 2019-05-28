@@ -12,13 +12,13 @@ import java.util.Scanner;
  * @author thete
  */
 public class Lonxitude {
-    
+    private static Scanner pepe = new Scanner(System.in);
         
     public static void kmsAMillas(){
         double km;
         double millas;
         
-        Scanner pepe = new Scanner(System.in);
+        
         km = pepe.nextDouble();
         
         
@@ -27,7 +27,16 @@ public class Lonxitude {
     }
     
     public static void MillasaKm(){
+        double km;
+        double millas;
         
+        Scanner pepe = new Scanner(System.in);
+        millas = pepe.nextDouble();
+        
+        
+            km = millas * 1.609;
+            System.out.println(millas);
     }
+    
     
 }
