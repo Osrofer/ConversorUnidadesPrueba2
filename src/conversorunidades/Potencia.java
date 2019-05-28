@@ -5,14 +5,25 @@
  */
 package conversorunidades;
 
+import java.util.Scanner;
+
 /**
  *
  * @author thete
  */
 public class Potencia {
     
-    public static void KWaCV(){
+    private static Scanner pepe = new Scanner(System.in);
     
+    public static void KWaCV(){
+        double KW;
+        double CV;
+        
+        KW = pepe.nextDouble();
+        
+        CV = KW * 1.341;
+        System.out.println(CV);
+        
     }
     
     public static void CVaKW(){
