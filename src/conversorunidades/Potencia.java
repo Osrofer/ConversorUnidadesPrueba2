@@ -27,7 +27,13 @@ public class Potencia {
     }
     
     public static void CVaKW(){
+        double KW;
+        double CV;
         
+        CV = pepe.nextDouble();
+        
+        KW = CV / 1.341;
+        System.out.println(KW);
     }
     
 }
