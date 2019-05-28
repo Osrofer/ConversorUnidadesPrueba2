@@ -5,18 +5,31 @@
  */
 package conversorunidades;
 
+import java.util.Scanner;
+
 /**
  *
  * @author thete
  */
 public class Temperatura {
     
+    private static Scanner pepe = new Scanner(System.in); 
+    
     public static void CelsiusaFahrenheit(){
     
-    
+        double C;
+        double F;
+        
+        C = pepe.nextDouble();
+        
+        
+            F = (C * 9 / 5) + 32 ;
+            System.out.println(F);
     }
     
     public static void FahrenheitaCelsius(){
+        
+        
         
     }
     
