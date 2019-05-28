@@ -29,8 +29,14 @@ public class Temperatura {
     
     public static void FahrenheitaCelsius(){
         
+        double C;
+        double F;
+        
+        F = pepe.nextDouble();
         
         
+            C = (F - 32) * 5/9 ;
+            System.out.println(C);        
     }
     
 }
