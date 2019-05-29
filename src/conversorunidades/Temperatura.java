@@ -8,13 +8,16 @@ package conversorunidades;
 import java.util.Scanner;
 
 /**
- *
+ * Clase<b>Temperatura</b>
  * @author thete
  */
 public class Temperatura {
     
     private static Scanner pepe = new Scanner(System.in); 
     
+    /**
+     * Cambio de Celsius a Fahrenheit
+     */
     public static void CelsiusaFahrenheit(){
     
         double C;
@@ -27,6 +30,9 @@ public class Temperatura {
             System.out.println(F);
     }
     
+    /**
+     * Cambio de Fahrenheit a Celsius
+     */
     public static void FahrenheitaCelsius(){
         
         double C;
@@ -39,6 +45,9 @@ public class Temperatura {
             System.out.println(C);        
     }
     
+    /**
+     * Cambio de Celsius a Kelvin
+     */
     public static void CelsiusKelvin(){
         
         double C;
@@ -51,6 +60,9 @@ public class Temperatura {
             System.out.println(K);        
     }
     
+    /**
+     * Cambio de Kelvin a Celsius
+     */
     public static void KelvinCelsius(){
         
         double C;
