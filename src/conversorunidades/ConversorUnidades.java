@@ -8,10 +8,11 @@ package conversorunidades;
 import java.util.Scanner;
 
 /**
- *
+ * Clase <b>ConversorUnidades</b>
  * @author thete
+ * @version 1.0
  */
-public class ConversorUnidades implements Operaciones {
+public class ConversorUnidades implements Lonxitude, Temperatura, Potencia {
 
     /**
      * @param args the command line arguments
@@ -25,7 +26,6 @@ public class ConversorUnidades implements Operaciones {
                 /* Longitudes*/
                 case 0:
                     break;
-                    MillasaPulgadas()
                 case 1:
                     menuLongitud();
                     break;
@@ -42,7 +42,11 @@ public class ConversorUnidades implements Operaciones {
         } while (op != 0);
     }//Fin de main
 
-    /*Muestra el menu principal*/
+    /**
+     * Muestra el menu principal
+     * @return opción de menú elegida
+     */
+
     public static int MostrarMenuPrincipal() {
         Scanner e = new Scanner(System.in);
         int op;
@@ -54,8 +58,11 @@ public class ConversorUnidades implements Operaciones {
 
         return op;
     }
+    
+    /**
+     * Muestra el menu para las operaciones con longitudes
+     */
 
-    /* Muestra el menu para las operaciones con longitudes */
     public static void menuLongitud() {
         Scanner e = new Scanner(System.in);
         int op;
@@ -86,8 +93,11 @@ public class ConversorUnidades implements Operaciones {
             }
         } while (op != 0);
     }
+    
+    /**
+     * Muestra el menu para las operaciones con potencias
+     */
 
-    /* Muestra el menu para las operaciones con potencias */
     public static void menuPotencia() {
         Scanner e = new Scanner(System.in);
         int op;
@@ -118,8 +128,11 @@ public class ConversorUnidades implements Operaciones {
             }
         } while (op != 0);
     }
+    
+    /**
+     * Muestra el menu para las operaciones con temperaturas
+     */
 
-    /* Muestra el menu para las operaciones con temperaturas */
     public static void menuTemperatura() {
         Scanner e = new Scanner(System.in);
         int op;
