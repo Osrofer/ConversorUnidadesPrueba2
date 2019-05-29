@@ -11,7 +11,7 @@ import java.util.Scanner;
  *
  * @author thete
  */
-public class ConversorUnidades implements Operaciones{
+public class ConversorUnidades implements Operaciones {
 
     /**
      * @param args the command line arguments
@@ -23,20 +23,24 @@ public class ConversorUnidades implements Operaciones{
         switch (op) {
             /* Longitudes*/
             case 0:
-                break;MillasaPulgadas()
+                break;
+                MillasaPulgadas()
             case 1:
                 menuLongitud();
                 break;
-                /*Potencia*/
-           case 2:menuPotencia();
+            /*Potencia*/
+            case 2:
+                menuPotencia();
                 break;
-                /*Temperatura*/
-                //case 3:menuTemperatura();
-                //break;
+            /*Temperatura*/
+            case 3:
+                menuTemperatura();
+                break;
 
         }
 
     }//Fin de main
+
     /*Muestra el menu principal*/
     public static int MostrarMenuPrincipal() {
         Scanner e = new Scanner(System.in);
@@ -49,8 +53,9 @@ public class ConversorUnidades implements Operaciones{
 
         return op;
     }
+
     /* Muestra el menu para las operaciones con longitudes */
-    public static void menuLongitud(){
+    public static void menuLongitud() {
         Scanner e = new Scanner(System.in);
         int op;
         System.out.println("Elija una opción");
@@ -61,23 +66,28 @@ public class ConversorUnidades implements Operaciones{
 
         op = Integer.valueOf(e.nextLine());
 
-       
-        switch(op){
-            case 0 : MostrarMenuPrincipal();
-            break;
-            case 1: kmsAMillas();
-            break;
-            case 2:MillasaKm();
+        switch (op) {
+            case 0:
+                MostrarMenuPrincipal();
                 break;
-            case 3:MillasaPulgadas();
+            case 1:
+                kmsAMillas();
                 break;
-            case 4:PulgadasaMillas();
+            case 2:
+                MillasaKm();
+                break;
+            case 3:
+                MillasaPulgadas();
+                break;
+            case 4:
+                PulgadasaMillas();
                 break;
         }
 
     }
-       /* Muestra el menu para las operaciones con potencias */
-    public static void menuPotencia(){
+
+    /* Muestra el menu para las operaciones con potencias */
+    public static void menuPotencia() {
         Scanner e = new Scanner(System.in);
         int op;
         System.out.println("Elija una opción");
@@ -88,23 +98,28 @@ public class ConversorUnidades implements Operaciones{
 
         op = Integer.valueOf(e.nextLine());
 
-       
-        switch(op){
-            case 0 : MostrarMenuPrincipal();
-            break;
-            case 1: KWaCV();
-            break;
-            case 2:CVaKW();
+        switch (op) {
+            case 0:
+                MostrarMenuPrincipal();
                 break;
-            case 3:KWaFtLb();
+            case 1:
+                KWaCV();
                 break;
-            case 4:FtLbAKW();
+            case 2:
+                CVaKW();
+                break;
+            case 3:
+                KWaFtLb();
+                break;
+            case 4:
+                FtLbAKW();
                 break;
         }
 
     }
-        /* Muestra el menu para las operaciones con potencias */
-    public static void menuTemperatura(){
+
+    /* Muestra el menu para las operaciones con temperaturas */
+    public static void menuTemperatura() {
         Scanner e = new Scanner(System.in);
         int op;
         System.out.println("Elija una opción");
@@ -115,17 +130,21 @@ public class ConversorUnidades implements Operaciones{
 
         op = Integer.valueOf(e.nextLine());
 
-       
-        switch(op){
-            case 0 : MostrarMenuPrincipal();
-            break;
-            case 1: CelsiusaFahrenheit();
-            break;
-            case 2:FahrenheitaCelsius();
+        switch (op) {
+            case 0:
+                MostrarMenuPrincipal();
                 break;
-            case 3:CelsiusKelvin();
+            case 1:
+                CelsiusaFahrenheit();
                 break;
-            case 4:KelvinCelsius();
+            case 2:
+                FahrenheitaCelsius();
+                break;
+            case 3:
+                CelsiusKelvin();
+                break;
+            case 4:
+                KelvinCelsius();
                 break;
         }
 
