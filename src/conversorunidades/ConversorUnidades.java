@@ -19,26 +19,27 @@ public class ConversorUnidades implements Operaciones {
     public static void main(String[] args) {
         /* Menu de inicio para que el usuario elija la accion a realizar*/
         int op;
-        op = MostrarMenuPrincipal();
-        switch (op) {
-            /* Longitudes*/
-            case 0:
-                break;
-                MillasaPulgadas()
-            case 1:
-                menuLongitud();
-                break;
-            /*Potencia*/
-            case 2:
-                menuPotencia();
-                break;
-            /*Temperatura*/
-            case 3:
-                menuTemperatura();
-                break;
+        do {
+            op = MostrarMenuPrincipal();
+            switch (op) {
+                /* Longitudes*/
+                case 0:
+                    break;
+                    MillasaPulgadas()
+                case 1:
+                    menuLongitud();
+                    break;
+                /*Potencia*/
+                case 2:
+                    menuPotencia();
+                    break;
+                /*Temperatura*/
+                case 3:
+                    menuTemperatura();
+                    break;
 
-        }
-
+            }
+        } while (op != 0);
     }//Fin de main
 
     /*Muestra el menu principal*/
@@ -63,27 +64,27 @@ public class ConversorUnidades implements Operaciones {
         System.out.println("2.Transformar de Millas a Km");
         System.out.println("3.Transformar de Millas a Pulgadas");
         System.out.println("4.Transformar de Pulgadas a Millas");
+        do {
+            op = Integer.valueOf(e.nextLine());
 
-        op = Integer.valueOf(e.nextLine());
-
-        switch (op) {
-            case 0:
-                MostrarMenuPrincipal();
-                break;
-            case 1:
-                kmsAMillas();
-                break;
-            case 2:
-                MillasaKm();
-                break;
-            case 3:
-                MillasaPulgadas();
-                break;
-            case 4:
-                PulgadasaMillas();
-                break;
-        }
-
+            switch (op) {
+                case 0:
+                    MostrarMenuPrincipal();
+                    break;
+                case 1:
+                    kmsAMillas();
+                    break;
+                case 2:
+                    MillasaKm();
+                    break;
+                case 3:
+                    MillasaPulgadas();
+                    break;
+                case 4:
+                    PulgadasaMillas();
+                    break;
+            }
+        } while (op != 0);
     }
 
     /* Muestra el menu para las operaciones con potencias */
@@ -95,27 +96,27 @@ public class ConversorUnidades implements Operaciones {
         System.out.println("2.Transformar de CV a KW");
         System.out.println("3.Transformar de KW a Ft/Lb");
         System.out.println("4.Transformar de Ft/Lb");
+        do {
+            op = Integer.valueOf(e.nextLine());
 
-        op = Integer.valueOf(e.nextLine());
-
-        switch (op) {
-            case 0:
-                MostrarMenuPrincipal();
-                break;
-            case 1:
-                KWaCV();
-                break;
-            case 2:
-                CVaKW();
-                break;
-            case 3:
-                KWaFtLb();
-                break;
-            case 4:
-                FtLbAKW();
-                break;
-        }
-
+            switch (op) {
+                case 0:
+                    MostrarMenuPrincipal();
+                    break;
+                case 1:
+                    KWaCV();
+                    break;
+                case 2:
+                    CVaKW();
+                    break;
+                case 3:
+                    KWaFtLb();
+                    break;
+                case 4:
+                    FtLbAKW();
+                    break;
+            }
+        } while (op != 0);
     }
 
     /* Muestra el menu para las operaciones con temperaturas */
