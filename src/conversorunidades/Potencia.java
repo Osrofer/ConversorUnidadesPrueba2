@@ -8,13 +8,16 @@ package conversorunidades;
 import java.util.Scanner;
 
 /**
- *
+ * Clase <b>Potencia</b>
  * @author thete
  */
 public class Potencia {
     
     private static Scanner pepe = new Scanner(System.in);
     
+    /**
+     * Cambio de KW a CV
+     */
     public static void KWaCV(){
         double KW;
         double CV;
@@ -26,6 +29,9 @@ public class Potencia {
         
     }
     
+    /**
+     * Cambio de CV a KW
+     */
     public static void CVaKW(){
         double KW;
         double CV;
@@ -36,6 +42,9 @@ public class Potencia {
         System.out.println(KW);
     }
     
+    /**
+     * Cambio de KW a FtLb
+     */
     public static void KWaFtLb(){
         double FtLb;
         double KW;
@@ -46,6 +55,9 @@ public class Potencia {
         System.out.println(KW);
     }
     
+    /**
+     * Cambio de FtLb a KW
+     */
     public static void FtLbAKW(){
         double FtLb;
         double KW;
