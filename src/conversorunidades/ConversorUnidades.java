@@ -23,7 +23,7 @@ public class ConversorUnidades implements Operaciones{
         switch (op) {
             /* Longitudes*/
             case 0:
-                break;
+                break;MillasaPulgadas()
             case 1:
                 menuLongitud();
                 break;
@@ -66,7 +66,7 @@ public class ConversorUnidades implements Operaciones{
             break;
             case 2:
                 break;
-            case 3:
+            case 3:MillasaPulgadas();
                 break;
             case 4:
                 break;
