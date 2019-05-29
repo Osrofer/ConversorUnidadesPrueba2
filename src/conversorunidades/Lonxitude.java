@@ -8,12 +8,15 @@ package conversorunidades;
 import java.util.Scanner;
 
 /**
- *
+ * Clase <b>Lonxitude</b>
  * @author thete
  */
 public class Lonxitude {
     private static Scanner pepe = new Scanner(System.in);
         
+    /**
+     * Cambio de km a millas
+     */
     public static void kmsAMillas(){
         double km;
         double millas;
@@ -26,6 +29,9 @@ public class Lonxitude {
             System.out.println(millas); 
     }
     
+    /**
+     * Cambio de millas a km
+     */
     public static void MillasaKm(){
         double km;
         double millas;
@@ -37,6 +43,9 @@ public class Lonxitude {
             System.out.println(millas);
     }
     
+    /**
+     * Cambio de millas a pulgadas
+     */
     public static void MillasaPulgadas(){
         double millas;
         double pulgadas;
@@ -47,6 +56,9 @@ public class Lonxitude {
         System.out.println(pulgadas);        
     }
     
+    /**
+     * Cambio de pulgadas a millas
+     */
     public static void PulgadasaMillas(){
         double millas;
         double pulgadas;
