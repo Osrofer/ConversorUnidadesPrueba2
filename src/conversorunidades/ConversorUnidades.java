@@ -28,8 +28,11 @@ public class ConversorUnidades implements Operaciones{
                 menuLongitud();
                 break;
                 /*Potencia*/
-           // case 2:menuPotencia();
-            //    break;
+           case 2:menuPotencia();
+                break;
+                /*Temperatura*/
+                //case 3:menuTemperatura();
+                //break;
 
         }
 
@@ -41,7 +44,7 @@ public class ConversorUnidades implements Operaciones{
         System.out.println("Elija una opción");
         System.out.println("1.Longitud");
         System.out.println("2.Potencia");
-
+        System.out.println("3.Temperatura");
         op = Integer.valueOf(e.nextLine());
 
         return op;
@@ -73,5 +76,58 @@ public class ConversorUnidades implements Operaciones{
         }
 
     }
-    
+       /* Muestra el menu para las operaciones con potencias */
+    public static void menuPotencia(){
+        Scanner e = new Scanner(System.in);
+        int op;
+        System.out.println("Elija una opción");
+        System.out.println("1.Transformar de KW a CV");
+        System.out.println("2.Transformar de CV a KW");
+        System.out.println("3.Transformar de KW a Ft/Lb");
+        System.out.println("4.Transformar de Ft/Lb");
+
+        op = Integer.valueOf(e.nextLine());
+
+       
+        switch(op){
+            case 0 : MostrarMenuPrincipal();
+            break;
+            case 1: KWaCV();
+            break;
+            case 2:CVaKW();
+                break;
+            case 3:KWaFtLb();
+                break;
+            case 4:FtLbAKW();
+                break;
+        }
+
+    }
+        /* Muestra el menu para las operaciones con potencias */
+    public static void menuTemperatura(){
+        Scanner e = new Scanner(System.in);
+        int op;
+        System.out.println("Elija una opción");
+        System.out.println("1.Transformar de Celsius a Fahrenheit");
+        System.out.println("2.Transformar Fahrenheir a Celsius");
+        System.out.println("3.Transformar de Celsius a Kelvin");
+        System.out.println("4.Transformar de Kelvin a Celsius");
+
+        op = Integer.valueOf(e.nextLine());
+
+       
+        switch(op){
+            case 0 : MostrarMenuPrincipal();
+            break;
+            case 1: CelsiusaFahrenheit();
+            break;
+            case 2:FahrenheitaCelsius();
+                break;
+            case 3:CelsiusKelvin();
+                break;
+            case 4:KelvinCelsius();
+                break;
+        }
+
+    }
 }
