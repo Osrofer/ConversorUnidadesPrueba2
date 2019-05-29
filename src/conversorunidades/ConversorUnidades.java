@@ -64,7 +64,7 @@ public class ConversorUnidades implements Operaciones{
             break;
             case 1: kmsAMillas();
             break;
-            case 2:
+            case 2:MillasaKm();
                 break;
             case 3:MillasaPulgadas();
                 break;
