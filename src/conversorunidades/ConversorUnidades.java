@@ -68,7 +68,7 @@ public class ConversorUnidades implements Operaciones{
                 break;
             case 3:MillasaPulgadas();
                 break;
-            case 4:
+            case 4:PulgadasaMillas();
                 break;
         }
 
